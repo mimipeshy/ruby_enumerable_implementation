@@ -54,7 +54,8 @@ puts '==========================this is my_count method'
 p(my_array.my_count)
 p(my_array.my_count(2))
 p(my_array.my_count { |x| (x % 2).zero? })
-p(my_array.my_count(2) { |value| value })
+
+p(my_array.count { |value| value })
 p((1..10).my_count { |x| (x % 2).zero? })
 
 puts '==========================this is my_inject method'
